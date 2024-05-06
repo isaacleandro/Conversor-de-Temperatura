@@ -30,3 +30,13 @@ body {
     border-radius: 1rem;
     border: 1px solid var(--secondary-color);
 }
+
+.separador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
