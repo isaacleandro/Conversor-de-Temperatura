@@ -31,19 +31,27 @@
     <input class="textField" type="number" id="minutes" placeholder="Digite o valor em minutos"
         onchange="convertHours()">
 
-        <div class="separador"></div>
+    <div class="separador"></div>
 
-        <h2>Conversor de Centimetros</h2>
+    <h2>Conversor de Centimetros</h2>
 
-        <label for="centimeter">Centimetros: </label>
-        <input class="textField" type="number" id="centimeters" placeholder="Digite o valor em Centimetros"
-            onchange="convertCentimeter()">
+    <label for="centimeter">Centimetros: </label>
+    <input class="textField" type="number" id="centimeter" placeholder="Digite o valor em centimetros"
+        onchange="convertCentimeters()">
 
-        <label for="inch">Metros: </label>
-        <input class="textField" type="number" id="inch" placeholder="Digite o valor em Metros"
-            onchange="convertCentimeter()">
+    <label for="inch">Metros: </label>
+    <input class="textField" type="number" id="inch" placeholder="Digite o valor em Metros"
+        onchange="convertCentimeters()">
 
+    <div class="separador"></div>
 
+    <h2>conversor de Moedas</h2>
+
+    <label for="real">Real: </label>
+    <input class="textField" type="number" id="real" placeholder="Digite o valor em Real" onchange="convertReal()">
+
+    <label for="dolar">Dolar: </label>
+    <input class="textField" type="number" id="dolar" placeholder="Digite o valor em Dolar" onchange="convertReal()">
 
     <script src="scripts/index.js"></script>
 </body>

@@ -35,20 +35,37 @@ function convertHours() {
     }
 }
 
-function convertCentimeter() {
-    const centimetrosInput = document.getElementById("centimeter");
+function convertCentimeters() {
+    const centimeterInput = document.getElementById("centimeter");
     const inchInput = document.getElementById("inch");
 
-    if (centimetrosInput.value !== "") {
-        const centimetrosInputValue = parseFloat(centimetrosInput.value);
-        const inchInputValue = centimetrosInputValue / 2.54;
+    if (centimeterInput.value !== "") {
+        const centimeterValue = parseFloat(centimeterInput.value);
+        const inchValue = centimeterValue / 100;
 
-        inchInput.value = inchInputValue.toFixed(2);
+        inchInput.value = inchValue.toFixed(2);
 
     } else if (inchInput.value !== "") {
-        const inchInputValue = parseFloat(inchInput.value);
-        const centimetrosInputValue = inchInputValue * 2.54;
+        const inchValue = parseFloat(inchInput.value);
+        const centimeterValue = inchValue * 1;
 
-        centimetrosInput.value = centimetrosInputValue.toFixed(2);
+        centimeterInput.value = centimeterValue.toFixed(2);
+    }
+}
+
+function convertReal() {
+    const realInput = document.getElementById("real");
+    const dolarInput = document.getElementById("dolar");
+
+    if (realInput.value !== "") {
+        const realValue = parseFloat(realInput.value);
+        const dolarValue = realValue / 5.24;
+
+        dolarInput.value = dolarValue.toFixed(2);
+    } else if (dolarInput.value !== "") {
+        const dolarValue = parseFloat(dolarInput.value);
+        const realValue = dolarValue * 5.24;
+
+        realInput.value = realValue.toFixed(2);
     }
 }

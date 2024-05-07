@@ -3,6 +3,7 @@
 :root {
     --primary-color: #1b1955;  
     --secondary-color: #ffa500;
+    --tertiary-color: #0c0b47;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1px;
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
