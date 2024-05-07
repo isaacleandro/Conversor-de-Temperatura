@@ -69,3 +69,20 @@ function convertReal() {
         realInput.value = realValue.toFixed(2);
     }
 }
+
+function convertKilobytes() {
+    const kilobytesInput = document.getElementById("kilobytes");
+    const megabytesInput = document.getElementById("megabytes");
+
+    if (kilobytesInput.value !== "") {
+        const kilobytesValue = parseFloat(kilobytesInput.value);
+        const megabytesValue = kilobytesValue / 1024;
+
+        megabytesInput.value = megabytesValue.toFixed(2);
+    } else if (megabytesInput.value !== "") {
+        const megabytesValue = parseFloat(megabytesInput.value);
+        const kilobytesValue = megabytesValue * 1024;
+
+        kilobytesInput.value = kilobytesValue.toFixed(2);
+    }
+}
