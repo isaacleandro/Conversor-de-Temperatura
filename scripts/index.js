@@ -34,3 +34,21 @@ function convertHours() {
         hoursInput.value = hoursValue.toFixed(2);
     }
 }
+
+function convertCentimeter() {
+    const centimetrosInput = document.getElementById("centimeter");
+    const inchInput = document.getElementById("inch");
+
+    if (centimetrosInput.value !== "") {
+        const centimetrosInputValue = parseFloat(centimetrosInput.value);
+        const inchInputValue = centimetrosInputValue / 2.54;
+
+        inchInput.value = inchInputValue.toFixed(2);
+
+    } else if (inchInput.value !== "") {
+        const inchInputValue = parseFloat(inchInput.value);
+        const centimetrosInputValue = inchInputValue * 2.54;
+
+        centimetrosInput.value = centimetrosInputValue.toFixed(2);
+    }
+}
